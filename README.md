@@ -38,6 +38,12 @@ git clone .../.git
 git pull origin main
 ```
 
+- Load packages
+
+```bash
+npm install
+```
+
 Optionally, you can remove .DS_Store from .gitignore, if you are not using a Mac.
 
 **Do not forget:**
