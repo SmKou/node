@@ -19,7 +19,7 @@ View on [Github Pages](https://smkou.github.io/mr-roboger-neighborhood/)
 
 ## Description
 
-Node is a template repo for a basic Node.js project, outfitted with a bundler, linter, javascript converter, and test package. The file structure consists of the config files in the root, along with package.json for setup, and the folders, _ _ tests _ _ containing test files and src contained the development files. There is one sample test file in the tests folder, whereas src consists of assets, css and js with index.js and index.html. Assets is for images and fonts, css is for stylesheets, and js has two subdirectories, bs for business logic and ui for user interface logic.
+Node is a template repo for a basic Node.js project, outfitted with a bundler, linter, javascript converter, and test package. The file structure consists of the config files in the root, along with package.json for setup, and the folders, _ _ tests _ _ containing test files and src contained the development files. There is one sample test file in the tests folder, whereas src consists of assets, css and js with index.js and index.html. Assets is for images and fonts. It contains two subdirectories, img and fonts, both containing samples, the latter possessing a selection: Bebas Neue, League Spartan, Muli, Nunito Sans, Oswald, Ovo, and Ra Mono. Css is for stylesheets, and contains two sample files, fonts.css and styles.css. The present styles in the latter are derived from Skeleton 2.0.4 by Dave Gamache. Js is for interaction and functionality, and has two subdirectories, bs for business logic and ui for user interface logic.
 
 ## Complete Setup
 
@@ -38,6 +38,11 @@ Node is a template repo for a basic Node.js project, outfitted with a bundler, l
   ```
 
 Optionally, you can remove .DS_Store from .gitignore, if you are not using a Mac.
+
+**Do not forget:**
+
+- Remove unwanted fonts from assets/fonts
+- Remove sample img from assets/img
 
 ### Change project references
 
