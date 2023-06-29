@@ -77,6 +77,8 @@ Component.test.js is just a sample with a single test and describe. Each compone
 
 ## **Rendering**
 
+Before publishing your website or app, change the rule, "no-console": "off", in .eslintrc to "no-console": "warn" and run ```npm run lint```
+
 **Github Pages**
 
 ```bash
