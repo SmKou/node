@@ -2,7 +2,7 @@
 
 By: Stella Marie
 
-Template repo for Node.js project with Webpack, ESLint, Babel, Jest, and TypeScript.
+Template repo for Node.js project with Webpack, ESLint, Babel, and Jest.
 
 View on [Github Pages](https://username.github.io/repo-name/)
 
@@ -16,7 +16,6 @@ View on [Github Pages](https://username.github.io/repo-name/)
   - ESLint
   - Jest, Jest-Each
   - Babel
-  - TypeScript (optional)
 
 ## **Description**
 
@@ -86,19 +85,9 @@ To create the production ready code for your project, use the command ```npm run
 
 To build and preview your project, use either ```npm run start``` or ```npm start``` in the terminal.
 
-To type in typescript:
-- name files with .ts instead of .js
-- run ```npx tsc <filename>.ts``` or ```npm run tsc``` to compile to javascript
-
-**Warning**: Typescript feature has not been tested in use. I anticipate conflicts with the build command, but am not sure.
-
-**Warning**: Unless there's at least one .ts file in your src folder, the tsconfig.json will output a problem, namely that there are no inputs. If you don't end up using TypeScript, remove Component.ts in src/js/bs/ and the tsconfig.json in root.
-
 ## **Rendering**
 
-Before publishing your website, app, or api, change the rule, "no-console": "off", in .eslintrc to "no-console": "warn" and run ```npm run lint```
-
-Also, remove any unused files or folders that came with this template.
+Before publishing your website, app, or api, delete the rules in .eslintrc, "no-console": "off" and "no-unused-vars": "off", then run ```npm run lint```
 
 **Github Pages**
 
