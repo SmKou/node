@@ -2,7 +2,7 @@
 
 By: Stella Marie
 
-Template repo for Node.js project with Webpack, ESLint, Babel, and Jest.
+Template repo for Node.js project with Webpack, ESLint, Babel, Jest, and TypeScript.
 
 View on [Github Pages](https://username.github.io/repo-name/)
 
@@ -14,12 +14,19 @@ View on [Github Pages](https://username.github.io/repo-name/)
 - Node.js
   - Webpack
   - ESLint
-  - Jest
+  - Jest, Jest-Each
   - Babel
+  - TypeScript (optional)
 
 ## **Description**
 
-Node is a template repo for a basic Node.js project, outfitted with a bundler, linter, javascript converter, and test package. The file structure consists of the config files in the root, along with package.json for setup, and the folders, _ _ tests _ _ containing test files and src contained the development files. There is one sample test file in the tests folder, whereas src consists of assets, css and js with index.js and index.html. Assets is for images and fonts. It contains two subdirectories, img and fonts, both containing samples, the latter possessing a selection: Bebas Neue, League Spartan, Muli, Nunito Sans, Oswald, Ovo, and Ra Mono. Css is for stylesheets, and contains two sample files, fonts.css and styles.css. The present styles in the latter are derived from Skeleton 2.0.4 by Dave Gamache. Js is for interaction and functionality, and has two subdirectories, bs for business logic and ui for user interface logic.
+Node is a template repo for a basic Node.js project, outfitted with a bundler, linter, javascript converter, compiler for typescript, and test package. The file structure consists of the config files in the root, along with package.json for setup, and the folders, _ _ tests _ _ containing test files, credits, and src containing the development files. There is one sample test file in the tests folder, whereas src consists of assets, css and js with index.js and index.html.
+
+The credit folder is a personal preference for keeping track of the origins of resources, particularly their READMEs and attribution details, often consisting of author or organization name, url, and title of the resource. If the resource was renamed, include the rename to attributions.
+
+When the build command is run, a dist directory will be created, and when the start command is run, launching a preview of the site, both a dist and coverage directories will be created. The dist will contain the production files for the website, app or api, while the coverage will save the results of running the test suites in jest.
+
+Assets is for images and fonts. It contains two subdirectories, img and fonts, both containing samples, the latter possessing a selection: Bebas Neue, League Spartan, Muli, Nunito Sans, Oswald, Ovo, and Ra Mono. All of these fonts are either public domain or open source. Css is for stylesheets, and contains two sample files, fonts.css and styles.css. The present styles in the latter are derived from Skeleton 2.0.4 by Dave Gamache. Js is for interaction and functionality, and has two subdirectories, bs for business logic and ui for user interface logic.
 
 ## **Complete Setup**
 
@@ -38,11 +45,7 @@ git clone .../.git
 git pull origin main
 ```
 
-- Load packages
-
-```bash
-npm install
-```
+The git pull command is only if necessary, such as choosing to add a README or LICENSE file when filling out the create repo form. You may encounter conflicts, since this template already comes with a README and LICENSE.
 
 Optionally, you can remove .DS_Store from .gitignore, if you are not using a Mac.
 
@@ -77,7 +80,9 @@ Component.test.js is just a sample with a single test and describe. Each compone
 
 ## **Rendering**
 
-Before publishing your website or app, change the rule, "no-console": "off", in .eslintrc to "no-console": "warn" and run ```npm run lint```
+Before publishing your website, app, or api, change the rule, "no-console": "off", in .eslintrc to "no-console": "warn" and run ```npm run lint```
+
+Also, remove any unused files or folders that came with this template.
 
 **Github Pages**
 
