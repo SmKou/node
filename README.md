@@ -92,6 +92,8 @@ To type in typescript:
 
 **Warning**: Typescript feature has not been tested in use. I anticipate conflicts with the build command, but am not sure.
 
+**Warning**: Unless there's at least one .ts file in your src folder, the tsconfig.json will output a problem, namely that there are no inputs. If you don't end up using TypeScript, remove Component.ts in src/js/bs/ and the tsconfig.json in root.
+
 ## **Rendering**
 
 Before publishing your website, app, or api, change the rule, "no-console": "off", in .eslintrc to "no-console": "warn" and run ```npm run lint```
